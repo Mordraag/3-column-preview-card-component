@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+.container {
+    
+    margin: 10vh auto;
+    width: 75%;
+    height: 75vh;
+    display: flex;
+    font-size: 15px;
+    font-family: "Lexend Deca", sans-serif;
+    
+    
+}
+.item {
+    
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 40px;
+}
+.btn {
+    width: 50%;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: hsl(0, 0%, 95%);
+    font-family: "Lexend Deca", sans-serif;
+    border: hsl(0, 0%, 95%) solid 1px;
+    color: transparent;
+
+}
+.btn:hover {
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+h1 {
+    color: hsl(0, 0%, 95%);
+    font-size: 42px;
+    font-family: 'Big Shoulders Display' , sans-serif;
+}
+.mini-icons {
+    width: 25%;
+}
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 2;
+}
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+}
+.btn-sedan {
+    color: hsl(31, 77%, 52%);
+}
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+.btn-suv{
+    color: hsl(184, 100%, 22%);
+}
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+}
+.btn-luxury {
+    color: hsl(179, 100%, 13%);
+}
+
+@media only screen and (max-width: 375px;){
+    body {
+        background-color: blue;
+    }
+}
