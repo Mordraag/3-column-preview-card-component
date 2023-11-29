@@ -2,20 +2,16 @@
     box-sizing: border-box;
     padding: 0;
 }
-.container {
-    
+.container {   
     margin: 10vh auto;
     width: 75%;
     height: 75vh;
     display: flex;
     font-size: 15px;
     font-family: "Lexend Deca", sans-serif;
-    
-    
 }
 .item {
-    
-    height: 75vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -29,7 +25,6 @@
     font-family: "Lexend Deca", sans-serif;
     border: hsl(0, 0%, 95%) solid 1px;
     color: transparent;
-
 }
 .btn:hover {
     background-color: transparent;
@@ -50,6 +45,7 @@ p {
 }
 .sedans {
     background-color: hsl(31, 77%, 52%);
+    border-radius: 15px 0 0 15px;
 }
 .btn-sedan {
     color: hsl(31, 77%, 52%);
@@ -62,13 +58,24 @@ p {
 }
 .luxury {
     background-color: hsl(179, 100%, 13%);
+    border-radius: 0 15px 15px 0;
 }
 .btn-luxury {
     color: hsl(179, 100%, 13%);
 }
 
-@media only screen and (max-width: 375px;){
-    body {
-        background-color: blue;
+@media screen and (max-width: 768px){
+    .container {
+        display: block;
+        width: 95%;
+    }
+    .sedans {
+        border-radius: 15px 15px 0 0;
+    }
+    .luxury {
+        border-radius: 0 0 15px 15px;
+    }
+    .item {
+        height: 85vh;
     }
 }
